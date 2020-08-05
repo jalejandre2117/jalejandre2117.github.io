@@ -1,1 +1,242 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  position: relative;
+}
+
+.center {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.cover {
+  object-fit: cover;
+  width: 50;
+  height: 100;
+}
+
+#test {
+  overflow: hidden;
+  width: 300;
+  height: 400;
+}
+#image {
+  position: relative;
+  top: 100;
+  left: 100;
+}
+
+</style>
+</head>
+<body>
+
+  <link rel="stylesheet" href="profile.css"/>
+<!-- START NAV -->
+
+<nav id="navbar" class="nav">
+  <ul class="nav-list">
+    <li>
+      <a href="#welcome-section">About</a>
+    </li>
+    <li>
+      <a href="#projects">Work</a>
+    </li>
+    <li>
+      <a href="#contact">Contact</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- END NAV -->
+
+<!-- START WELCOME SECTION -->
+
+<section id="welcome-section" class="welcome-section">
+  <h1>Welcome, My name is Jorge Alejandre!</h1>
+  <p>Software Engineer</p>
+
+<div class="row">
+  <div class="column">
+    <img src="IMG_1203.jpeg" class="cover" width="200" height="600">
+  </div>
+  <div class="column">
+    <div class="container">
+    <img src="https://i2.wp.com/cmdpdh.org/wp-content/uploads/2017/03/mapa-desplazamiento-Interno-forzado-en-mexico-2016.gif?ssl=1" class="cover" width="200" height="600">
+    <div class="center">Born in Mexico</div>
+    </div>
+    </div>
+  <div class="column">
+    <img src="IMG_1035.jpeg" class="cover" width="200" height="600">
+  </div>
+</div>
+  
+    
+</section>
+
+<!-- END WELCOME SECTION -->
+
+<!-- START PROJECTS SECTION -->
+
+<section id="projects" class="projects-section">
+  <h2 class="projects-section-header">These are all the projects I have worked on. Enjoy!</h2>
+
+  <div class="projects-grid">
+    <a
+      href="https://github.com/streamroom/StreamRoom-App"
+      target="_blank"
+      class="project project-tile"
+    >
+      <img
+        class="project-image"
+        src="http://g.recordit.co/O6Fo4ieHWf.gif"
+        alt="project"
+      />
+      <p class="project-title">
+        <span class="code">&lt;</span>
+        Stream Rooms
+        <span class="code">&#47;&gt;</span>
+      </p>
+    </a>
+    <a
+      href="https://github.com/jalejandre2117/Instagram"
+      target="_blank"
+      class="project project-tile"
+    >
+      <img
+        class="project-image"
+        src="https://i.imgur.com/WdyFfIX.gif"
+        alt="project"
+      />
+      <p class="project-title">
+        <span class="code">&lt;</span>
+        Instagram
+        <span class="code">&#47;&gt;</span>
+      </p>
+    </a>
+    <a
+      href="https://github.com/jalejandre2117/Flixter"
+      target="_blank"
+      class="project project-tile"
+    >
+      <img
+        class="project-image"
+        src="https://i.imgur.com/9C0HKpt.gif"
+        alt="project"
+      />
+      <p class="project-title">
+        <span class="code">&lt;</span>
+        Flixter
+        <span class="code">&#47;&gt;</span>
+      </p>
+    </a>
+    <a
+      href="https://github.com/jalejandre2117/Tipulator"
+      target="_blank"
+      class="project project-tile"
+    >
+      <img
+        class="project-image"
+        src="https://i.imgur.com/9spuz57.gif"
+        alt="project"
+      />
+      <p class="project-title">
+        <span class="code">&lt;</span>
+        Tipulator
+        <span class="code">&#47;&gt;</span>
+      </p>
+    </a>
+    <a
+      href="https://github.com/jalejandre2117/Twitter"
+      target="_blank"
+      class="project project-tile"
+    >
+      <img
+        class="project-image"
+        src="https://i.imgur.com/3GmvN5L.gif"
+        alt="project"
+      />
+      <p class="project-title">
+        <span class="code">&lt;</span>
+        Tweeter
+        <span class="code">&#47;&gt;</span>
+      </p>
+    </a>
+    <a
+      target="_blank"
+      class="project project-tile"
+    >
+      <img
+        class="project-image"
+        src="file:///Users/jalejandre/OneDrive%20-%20Delaware%20State%20University/Internship/Neuroscience%20Research/NINDSPoster/Screen%20Shot%202020-07-31%20at%2012.44.28%20PM.png"
+        alt="project"
+      />
+      <p class="project-title">
+        <span class="code">&lt;</span>
+        NeRvolver
+        <span class="code">&#47;&gt;</span>
+      </p>
+    </a>
+  </div>
+
+</section>
+
+<!-- END PROJECTS SECTION -->
+
+<!-- START CONTACT SECTION -->
+
+<section id="contact" class="contact-section">
+  <div class="contact-section-header">
+    <h2>Feel Free to Contact Me</h2>
+  </div>
+  <div class="contact-links">
+    <a
+      href="https://www.facebook.com/J.Alejandre21"
+      target="_blank"
+      class="btn contact-details"
+      ><i class="fab fa-facebook-square"></i> Facebook</a
+    >
+    <a
+      id="profile-link"
+      href="https://github.com/jalejandre2117"
+      target="_blank"
+      class="btn contact-details"
+      ><i class="fab fa-github"></i> GitHub</a
+    >
+    <a
+      href="https://twitter.com/j_alejandre21"
+      target="_blank"
+      class="btn contact-details"
+      ><i class="fab fa-twitter"></i> Twitter</a
+    >
+    <a href="mailto:jorge.alejandre2117@gmail.com" class="btn contact-details"
+      ><i class="fas fa-at"></i> Send an E-Mail</a
+    >
+    <a href="tel:770-374-2675" class="btn contact-details"
+      ><i class="fas fa-mobile-alt"></i> Call Me</a
+    >
+  </div>
+</section>
+
+<!-- END CONTACT SECTION -->
+
+
